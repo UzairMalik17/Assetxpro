@@ -47,7 +47,7 @@ function Navbar() {
         </div>
       </div>
       {toggle && (
-        <div className="w-3/12 h-screen flex flex-col gap-4 justify-between items-center absolute right-0 top-0 py-4 bg-black">
+        <div className="w-1/2 sm:w-1/3 h-screen flex flex-col gap-4 justify-between items-center absolute right-0 top-0 py-4 bg-black">
           <div>
             <AiOutlineClose
               className="w-12 h-8 text-white hover:text-blue-900"
