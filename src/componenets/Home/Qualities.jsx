@@ -94,11 +94,12 @@ function Qualities() {
     },
   ];
   return (
-    <div className="w-full mx-auto relative grid lg:grid-cols-3 gap-2 text-center bg-black text-white text-2xl font-extrabold pb-1">
+    <div className="w-full mx-auto grid lg:grid-cols-3 gap-2 text-center bg-black text-white text-2xl font-extrabold pb-1">
       {qualities.map((item, index) => {
         return (
           <div
-            className={`h-[350px] bg-[url('${item.img}')] bg-cover bg-no-repeat bg-center flex items-center justify-center`}
+            className={`h-[350px] bg-cover bg-no-repeat bg-center flex items-center justify-center`}
+            style={{ backgroundImage: `url(${item.img})` }}
             key={index}>
             {item.name}
           </div>
