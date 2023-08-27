@@ -1,5 +1,4 @@
 import React from "react";
-import ComponentWrapper from "../Shared/ComponentWrapper";
 
 function Platform() {
   const awards = [
@@ -20,8 +19,8 @@ function Platform() {
     },
   ];
   return (
-    <ComponentWrapper style={`bg-white text-black py-4 z-10 relative`}>
-      <div className="w-full absolute right-0 left-0 py-4">
+    <div className="w-full bg-white">
+      <div className="w-full max-w-[1300px] mx-auto text-black py-4 p-4 md:p-8">
         <div className="w-full grid lg:grid-cols-2 gap-2">
           <div className="w-full flex items-center justify-center lg:justify-end">
             <div className="w-11/12 md:w-9/12 h-full flex flex-col gap-8 items-center lg:items-start justify-center py-8">
@@ -67,7 +66,7 @@ function Platform() {
           </div>
         </div>
       </div>
-    </ComponentWrapper>
+    </div>
   );
 }
 
