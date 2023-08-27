@@ -60,7 +60,11 @@ function Platform() {
           <div className="w-full border border-solid border-black bg-gray-300 grid md:grid-cols-5 gap-4 items-center justify-center px-4 py-2 mx-auto">
             {awards.map((items, index) => {
               return (
-                <img src={items.img} key={index} alt="Award Winning"></img>
+                <img
+                  className="w-full"
+                  src={items.img}
+                  key={index}
+                  alt="Award Winning"></img>
               );
             })}
           </div>

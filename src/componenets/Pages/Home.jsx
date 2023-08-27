@@ -4,6 +4,7 @@ import Hero from "../Home/Hero";
 import Qualities from "../Home/Qualities";
 import Platform from "../Home/Platform";
 import Navigation from "../Home/Navigation";
+import Disclaimer from "../Home/Disclaimer";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Qualities />
       <Platform />
       <Navigation />
+      <Disclaimer />
     </div>
   );
 }
