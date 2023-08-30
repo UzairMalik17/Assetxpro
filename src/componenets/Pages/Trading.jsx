@@ -1,7 +1,8 @@
 import React from "react";
+import TradingHero from "../Home/TradingHero";
 
 function Trading() {
-  return <div>Trading</div>;
+  return <TradingHero />;
 }
 
 export default Trading;

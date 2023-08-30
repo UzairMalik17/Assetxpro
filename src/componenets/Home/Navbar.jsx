@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <NavbarWrapper style={`relative`}>
       <div className="w-full text-white flex flex-col items-center relative">
-        <div className="w-full h-32 flex flex-row justify-end pt-4">
+        <div className="w-full h-32 flex flex-row justify-end pt-4 pr-10">
           <button className="w-36 h-12 border border-solid border-white rounded-3xl bg-blue-800">
             Login
           </button>
