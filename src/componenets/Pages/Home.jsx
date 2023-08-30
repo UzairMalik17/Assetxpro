@@ -10,13 +10,9 @@ import Footer from "../Home/Footer";
 function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Qualities />
       <Platform />
-      <Navigation />
-      <Disclaimer />
-      <Footer />
     </div>
   );
 }

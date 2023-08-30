@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavbarWrapper from "../Shared/NavbarWrapper";
 import { AiOutlineStock, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => {
@@ -8,7 +9,7 @@ function Navbar() {
   };
   const menu = [
     { name: "HOME", route: "/" },
-    { name: "TRADING", route: "/" },
+    { name: "TRADING", route: "/trading" },
     { name: "PRODUCTS", route: "/" },
     { name: "ABOUT US", route: "/" },
     { name: "FAQ", route: "/" },
@@ -33,9 +34,9 @@ function Navbar() {
           </div>
           {menu.map((item, index) => {
             return (
-              <a className="hidden lg:inline" key={index} href={item.route}>
+              <Link className="hidden lg:inline" key={index} to={item.route}>
                 {item.name}
-              </a>
+              </Link>
             );
           })}
           <AiOutlineStock
