@@ -10,7 +10,7 @@ function Navbar() {
   const menu = [
     { name: "HOME", route: "/" },
     { name: "TRADING", route: "/trading" },
-    { name: "PRODUCTS", route: "/" },
+    { name: "PRODUCTS", route: "/products" },
     { name: "ABOUT US", route: "/" },
     { name: "FAQ", route: "/" },
     { name: "COMPLIANCE", route: "/" },

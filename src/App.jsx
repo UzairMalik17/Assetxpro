@@ -10,6 +10,7 @@ import {
 import Root from "./componenets/Home/Root";
 import ErrorPage from "./componenets/Pages/ErrorPage";
 import Trading from "./componenets/Pages/Trading";
+import Products from "./componenets/Pages/Products";
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ function App() {
         <Route path="/errorPage" errorElement={<ErrorPage />}></Route>
         <Route index element={<Home />}></Route>
         <Route path="/trading" element={<Trading />}></Route>
+        <Route path="/products" element={<Products />}></Route>
       </Route>
     )
   );
