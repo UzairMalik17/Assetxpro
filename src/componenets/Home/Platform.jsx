@@ -43,7 +43,7 @@ function Platform() {
           <div className="w-full flex justify-center lg:justify-start items-center">
             <img
               className="w-[390] sm:w-[590px] h-[220px] sm:h-[421px]"
-              src="desktop 1.png"
+              src="desktop1.png"
               alt="laptop"></img>
           </div>
           <div className="w-full h-[330px] bg-[url('trade.png')] bg-center bg-cover bg-no-repeat text-white text-3xl font-extrabold flex flex-row justify-center items-center">
