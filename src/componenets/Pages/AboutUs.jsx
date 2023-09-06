@@ -1,6 +1,7 @@
 import React from "react";
 import ReuseHero from "../Shared/ReuseHero";
 import AssetxproAdvantages from "../Home/AssetxproAdvantages";
+import WhyAssetxpro from "../Home/WhyAssetxpro";
 
 function AboutUs() {
   const heading = "ASSETXPRO IS AN INDUSTRY LEADER IN THE FOREX & CFD MARKETS.";
@@ -11,6 +12,7 @@ function AboutUs() {
     <div>
       <ReuseHero paragraph={paragraph} heading={heading} />
       <AssetxproAdvantages />
+      <WhyAssetxpro />
     </div>
   );
 }
