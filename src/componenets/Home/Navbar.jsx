@@ -11,7 +11,7 @@ function Navbar() {
     { name: "HOME", route: "/" },
     { name: "TRADING", route: "/trading" },
     { name: "PRODUCTS", route: "/products" },
-    { name: "ABOUT US", route: "/" },
+    { name: "ABOUT US", route: "/aboutus" },
     { name: "FAQ", route: "/" },
     { name: "COMPLIANCE", route: "/" },
     { name: "CONTACT US", route: "/" },
