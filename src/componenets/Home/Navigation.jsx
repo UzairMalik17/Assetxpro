@@ -29,7 +29,7 @@ function Navigation() {
   ];
   return (
     <ComponentWrapper style={`bg-black py-8`}>
-      <div className="w-full bg-green-700 text-black p-8">
+      <div className="w-full bg-green-800 text-black p-8">
         <div className="w-full grid sm:grid-cols-2 gap-8 lg:grid-cols-4 justify-center">
           {navigation.map((item, index) => {
             return (

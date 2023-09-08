@@ -12,7 +12,7 @@ function Navbar() {
     { name: "TRADING", route: "/trading" },
     { name: "PRODUCTS", route: "/products" },
     { name: "ABOUT US", route: "/aboutus" },
-    { name: "FAQ", route: "/" },
+    { name: "FAQ", route: "/faq" },
     { name: "COMPLIANCE", route: "/" },
     { name: "CONTACT US", route: "/" },
   ];
@@ -24,7 +24,7 @@ function Navbar() {
             Login
           </button>
         </div>
-        <div className="w-[96%] h-24 flex flex-row justify-between items-center px-2 bg-green-700 absolute top-20">
+        <div className="w-[96%] h-24 flex flex-row justify-between items-center px-2 bg-green-800 absolute top-20">
           <div className="h-full flex flex-row justify-start items-center">
             <img
               className="w-[80px] md:w-[119px] h-[75px] md:h-[100px]"
