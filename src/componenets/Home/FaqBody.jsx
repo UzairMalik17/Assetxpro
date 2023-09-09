@@ -95,6 +95,66 @@ function FaqBody() {
       answer:
         "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
     },
+    {
+      category: "PLATFORM",
+      question: "PLATFORM How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "PLATFORM",
+      question: "PLATFORM How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "PLATFORM",
+      question: "PLATFORM How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "PLATFORM",
+      question: "PLATFORM How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "PLATFORM",
+      question: "PLATFORM How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "DEPOSIT",
+      question: "DEPOSIT How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "DEPOSIT",
+      question: "DEPOSIT How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "DEPOSIT",
+      question: "DEPOSIT How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "DEPOSIT",
+      question: "DEPOSIT How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
+    {
+      category: "DEPOSIT",
+      question: "DEPOSIT How Secure Is Trading with You ?",
+      answer:
+        "We take all possible measures to ensure your utmost security. We use the internationally accepted security system SSL (Secure Sockets Layer) that encrypts all credit card payments over the web. This system is automatic, and you will receive instant notification if your browser does not support it.",
+    },
   ];
   const faqCategory = [
     "OPEN ACCOUNT",
@@ -104,9 +164,8 @@ function FaqBody() {
     "DEPOSIT",
   ];
   const [selectedCategory, setCategory] = useState(faqCategory[0]);
-  function categorySelector(index) {
-    setCategory(faqCategory[index]);
-    console.log(faqCategory[index]);
+  function categorySelector(item) {
+    setCategory(item);
   }
 
   return (
@@ -122,7 +181,7 @@ function FaqBody() {
                 <FaqCategory
                   key={index}
                   categoryName={item}
-                  categorySelector={() => categorySelector(index)}
+                  categorySelector={() => categorySelector(item)}
                 />
               );
             })}

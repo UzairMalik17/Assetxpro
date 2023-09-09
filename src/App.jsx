@@ -13,6 +13,7 @@ import Trading from "./componenets/Pages/Trading";
 import Products from "./componenets/Pages/Products";
 import AboutUs from "./componenets/Pages/AboutUs";
 import FAQ from "./componenets/Pages/FAQ";
+import Compliance from "./componenets/Pages/Compliance";
 
 function App() {
   const router = createBrowserRouter(
@@ -24,6 +25,7 @@ function App() {
         <Route path="/products" element={<Products />}></Route>
         <Route path="/aboutus" element={<AboutUs />}></Route>
         <Route path="/faq" element={<FAQ />}></Route>
+        <Route path="/compliance" element={<Compliance />}></Route>
       </Route>
     )
   );

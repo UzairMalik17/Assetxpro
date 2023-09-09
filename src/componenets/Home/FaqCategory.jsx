@@ -3,13 +3,13 @@ import ComponentWrapper from "../Shared/ComponentWrapper";
 
 function FaqCategory({ categoryName, categorySelector }) {
   return (
-    <ComponentWrapper style={`bg-[#AAAAAAB0]`}>
-      <div className="w-full" onClick={categorySelector}>
-        <div className="w-9/12 p-4">
-          <p className="text-2xl text-white font-extrabold">{categoryName}</p>
-        </div>
-      </div>
-    </ComponentWrapper>
+    <button
+      className="w-full text-left bg-[#AAAAAAB0]"
+      onClick={categorySelector}>
+      <p className="text-lg md:text-2xl p-2 md:p-4 text-white font-semibold md:font-extrabold">
+        {categoryName}
+      </p>
+    </button>
   );
 }
 
