@@ -1,29 +1,52 @@
 import React from "react";
-import ComponentWrapper from "../Shared/ComponentWrapper";
+import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const navigation = [
     {
       menu: "TRADING",
-      options: ["Assets Index", "Trading Platform", "Account Types"],
+      options: [
+        { name: "Assets Index", route: "/" },
+        { name: "Trading Platform", route: "/" },
+        { name: "Account Types" },
+      ],
     },
     {
       menu: "PRODUCTS",
-      options: ["CFD", "Forex", "Residents", "SAVING ACCOUNT"],
+      options: [
+        { name: "CFD", route: "/" },
+        { name: "Forex", route: "/" },
+        { name: "Residents", route: "/" },
+        { name: "SAVING ACCOUNT" },
+      ],
     },
     {
       menu: "ASSETXPRO",
-      options: ["About us", "FAQ", "Contact us"],
+      options: [
+        { name: "About us", route: "/aboutus" },
+        { name: "FAQ", route: "faq" },
+        { name: "Contact us", route: "/" },
+      ],
     },
     {
       menu: "LEGAL",
       options: [
-        "Terms and conditions",
-        "Leverege / Bonus Policy",
-        "KYC policy",
-        "Privacy Policy",
-        "Anti-Money Laundering Policy",
-        "Withdrawal of funds policy",
+        {
+          name: "TERMS AND CONDITIONS",
+          route: "/compliance/termsandconditions",
+        },
+        { name: "LEVEREGE / BONUS POLICY", route: "/compliance/bonus" },
+        { name: "KYC POLICY", route: "/compliance/kycpolicy" },
+        { name: "PRIVACY POLICY", route: "/compliance/privacypolicy" },
+        {
+          name: "ANTI-MONEY LAUNDERING POLICY",
+          route: "/compliance/amlpolicy",
+        },
+        {
+          name: "Withdrawal of funds name",
+          route: "/compliance/withdrawaloffunds",
+        },
       ],
     },
   ];
@@ -34,12 +57,16 @@ function Navigation() {
           {navigation.map((item, index) => {
             return (
               <div
-                className="w-full flex flex-col gap-4 text-3xl font-extrabold"
+                className="w-full flex flex-col gap-6 text-3xl font-extrabold"
                 key={index}>
                 <p>{item.menu}</p>
-                <div className="w-full text-base">
+                <div className="w-full flex flex-col gap-2 justify-start items-start">
                   {item.options.map((items, id) => {
-                    return <p key={id}>{items}</p>;
+                    return (
+                      <Link className="text-base" key={id} to={items.route}>
+                        {items.name}
+                      </Link>
+                    );
                   })}
                 </div>
               </div>

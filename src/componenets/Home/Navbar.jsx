@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavbarWrapper from "../Shared/NavbarWrapper";
+import NavbarWrapper from "../Shared/Wrappers/NavbarWrapper";
 import { AiOutlineStock, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function Navbar() {

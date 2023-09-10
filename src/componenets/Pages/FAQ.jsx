@@ -1,6 +1,6 @@
 import React from "react";
 import ReuseHero from "../Shared/ReuseHero";
-import FaqBody from "../Home/FaqBody";
+import FaqBody from "../Home/Faqs/FaqBody";
 
 function FAQ() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import StartTrading from "../Home/StartTrading";
+import StartTrading from "../Home/Trading/StartTrading";
 import ReuseHero from "../Shared/ReuseHero";
 
 const heading = "GET STARTED WITH ASSETX PRO TRADING ACCOUNT TODAY!";
@@ -9,7 +9,7 @@ const paragraph =
 function Trading() {
   return (
     <div>
-      <ReuseHero paragraph={paragraph} heading={heading} />
+      <ReuseHero style={`items-end`} paragraph={paragraph} heading={heading} />
       <StartTrading />
     </div>
   );

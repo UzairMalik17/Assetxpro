@@ -9,7 +9,7 @@ const paragraph =
 function Products() {
   return (
     <div>
-      <ReuseHero paragraph={paragraph} heading={heading} />
+      <ReuseHero style={`items-end`} paragraph={paragraph} heading={heading} />
       <ProductsBody />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import ComponentWrapper from "../Shared/ComponentWrapper";
+import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
 
 function ProductsBody() {
   return (

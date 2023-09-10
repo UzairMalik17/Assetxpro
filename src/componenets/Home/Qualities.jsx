@@ -1,6 +1,6 @@
 import React from "react";
-import ComponentWrapper from "../Shared/ComponentWrapper";
-import TradersRow from "./TradersRow";
+import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
+import TradersRow from "./Trading/TradersRow";
 
 function Qualities() {
   const qualities = [
