@@ -20,9 +20,11 @@ function Navbar() {
     <NavbarWrapper style={`relative`}>
       <div className="w-full text-white flex flex-col items-center relative">
         <div className="w-full h-32 flex flex-row justify-end pt-4 pr-10">
-          <button className="w-36 h-12 border border-solid border-white rounded-3xl bg-blue-800">
-            Login
-          </button>
+          <Link to={"/login"}>
+            <button className="w-36 h-12 border border-solid border-white rounded-3xl bg-blue-800">
+              Login
+            </button>
+          </Link>
         </div>
         <div className="w-[96%] h-24 flex flex-row justify-between items-center px-2 bg-green-800 absolute top-20">
           <div className="h-full flex flex-row justify-start items-center">
