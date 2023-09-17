@@ -1,5 +1,7 @@
 import React from "react";
 import FormsWrapper from "../Shared/Wrappers/FormsWrapper";
+import { Link } from "react-router-dom";
+import FormInput from "../Shared/FormInput";
 
 function Login() {
   return (
@@ -19,17 +21,23 @@ function Login() {
           <p className="text-3xl font-semibold md:text-5xl">Welcome</p>
           <p>Please login to your account by filling this form:</p>
           <form className="w-full flex flex-col gap-8 justify start items-start">
-            <input
-              className="w-full bg-green-600 placeholder-white px-4 py-2 required"
+            <FormInput
+              className="w-full bg-green-600 placeholder-white px-4 py-2"
               type="email"
               placeholder="Email:"
-              required></input>
+            />
+            <FormInput type="password" placeholder="Password:" />
             <input
-              className="w-full bg-green-600 placeholder-white px-4 py-2 required"
-              type="password"
-              placeholder="Password:"
-              required></input>
+              className="text-black font-bold bg-white rounded px-8 py-2"
+              type="submit"
+              value={"Login"}></input>
           </form>
+        </div>
+        <div className="w-full flex flex-row justify-center items-center gap-2 font-bold">
+          <span className="text-white">Forgot password?</span>
+          <Link to={"/forgotpassword"} className="text-black">
+            Click here
+          </Link>
         </div>
       </div>
     </FormsWrapper>

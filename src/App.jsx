@@ -21,6 +21,8 @@ import PrivacyPolicy from "./componenets/Pages/Policies/PrivacyPolicy";
 import AntiMoneyLaundering from "./componenets/Pages/Policies/AntiMoneyLaundering";
 import WithdrawalOfFunds from "./componenets/Pages/Policies/WithdrawalOfFunds";
 import Login from "./componenets/Pages/Login";
+import ForgotPassword from "./componenets/Pages/ForgotPassword";
+import Registration from "./componenets/Pages/Registration";
 
 function App() {
   const router = createBrowserRouter(
@@ -52,6 +54,8 @@ function App() {
           </Route>
         </Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/forgotpassword" element={<ForgotPassword />}></Route>
+        <Route path="/registration" element={<Registration />}></Route>
       </Route>
     )
   );
